@@ -34,11 +34,11 @@ export function ContactForm() {
     };
 
     return (
-        <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-transparent">
-            <h2 className="text-5xl font-bold text-neutral-800 dark:text-neutral-200 text-center">
+        <div className="shadow-input mx-auto w-full max-w-md rounded-none p-4 md:rounded-2xl md:p-8 bg-transparent">
+            <h2 className="text-5xl font-bold text-neutral-200 text-center">
                 Contact Me
             </h2>
-            <p className="mt-2 max-w-sm text-xl text-neutral-600 dark:text-neutral-300 text-center">
+            <p className="mt-2 max-w-sm text-xl text-neutral-300 text-center">
                 Got a question, proposal, or <br /> just want to say hello?
             </p>
 
@@ -63,7 +63,7 @@ export function ContactForm() {
                 </LabelInputContainer>
 
                 <button
-                    className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
+                    className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br font-medium text-white  bg-zinc-800 from-zinc-900 to-zinc-900 shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
                     type="submit"
                 >
                     Send Message

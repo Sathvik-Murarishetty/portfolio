@@ -5,7 +5,7 @@ export function TechStack() {
   return (
     <div className="flex flex-col items-center justify-center gap-6 h-full text-center">
       <TechTooltip />
-      <h3 className="text-xl font-semibold text-gray-800 dark:text-white">
+      <h3 className="text-xl font-semibold text-white">
         My Tech Stack
       </h3>
     </div>

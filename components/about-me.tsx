@@ -14,7 +14,7 @@ export function AboutMe() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
 
             <div className="mb-10 text-center">
-                <h2 className="text-2xl md:text-5xl mb-6 text-black dark:text-white max-w-4xl font-bold">
+                <h2 className="text-2xl md:text-5xl mb-6 text-white max-w-4xl font-bold">
                     About Me
                 </h2>
             </div>

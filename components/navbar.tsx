@@ -15,7 +15,7 @@ export function Navbar() {
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconHome className="h-full w-full text-neutral-300" />
       ),
       href: "#home",
     },
@@ -23,35 +23,35 @@ export function Navbar() {
     {
       title: "About",
       icon: (
-        <IconUserCircle className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconUserCircle className="h-full w-full text-neutral-300" />
       ),
       href: "#about",
     },
     {
       title: "Experience",
       icon: (
-        <IconBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBriefcase className="h-full w-full text-neutral-300" />
       ),
       href: "#experience",
     },
     {
       title: "Projects",
       icon: (
-        <IconTools className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconTools className="h-full w-full text-neutral-300" />
       ),
       href: "#projects",
     },
     {
       title: "Contact",
       icon: (
-        <IconPhone className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPhone className="h-full w-full text-neutral-300" />
       ),
       href: "#contact",
     },
     {
       title: "Github",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandGithub className="h-full w-full text-neutral-300" />
       ),
       href: "https://github.com/Sathvik-Murarishetty",
       target: "_blank",
@@ -59,7 +59,7 @@ export function Navbar() {
     {
       title: "LinkedIn",
       icon: (
-        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-300" />
       ),
       href: "https://www.linkedin.com/in/sathvik-murarishetty/",
       target: "_blank"

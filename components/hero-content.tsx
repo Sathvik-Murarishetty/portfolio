@@ -9,11 +9,11 @@ export function HeroContent() {
 
     return (
         <div className="flex justify-center items-center px-4">
-            <div className="mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+            <div className="mx-auto font-normal text-neutral-400">
                 <div className="text-5xl font-bold text-neutral-100">
                     Hi,
                     <PointerHighlight
-                        rectangleClassName="bg-neutral-200 dark:bg-neutral-700 border-neutral-300 dark:border-neutral-600"
+                        rectangleClassName="bg-neutral-700 border-neutral-600"
                         pointerClassName="text-yellow-500"
                     >
                         <span className="relative z-10">I’m Sathvik 👋</span>
@@ -35,7 +35,7 @@ export function HeroContent() {
                         <HoverBorderGradient
                             containerClassName="rounded-full"
                             as="button"
-                            className="dark:bg-black bg-white text-md text-xl dark:text-white flex items-center space-x-2"
+                            className="bg-black text-md text-xl text-white flex items-center space-x-2"
                         >
                             <span>Download Resume</span>
                         </HoverBorderGradient>
