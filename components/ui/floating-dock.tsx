@@ -16,7 +16,7 @@ export const FloatingDock = ({
   desktopClassName,
   mobileClassName,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; target?: string }[];
   desktopClassName?: string;
   mobileClassName?: string;
 }) => {
@@ -32,7 +32,7 @@ const FloatingDockMobile = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; target?: string }[];
   className?: string;
 }) => {
   const [open, setOpen] = useState(false);
@@ -63,7 +63,8 @@ const FloatingDockMobile = ({
               >
                 <a
                   href={item.href}
-                  key={item.title}
+                  target={item.target || "_self"}
+                  rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
                   className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
@@ -87,7 +88,7 @@ const FloatingDockDesktop = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; target?: string }[];
   className?: string;
 }) => {
   let mouseX = useMotionValue(Infinity);
@@ -97,7 +98,7 @@ const FloatingDockDesktop = ({
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
         "mx-auto hidden h-16 items-end gap-4 rounded-2xl bg-gray-50 px-4 pb-3 md:flex dark:bg-neutral-900",
-        className,
+        className
       )}
     >
       {items.map((item) => (
@@ -112,11 +113,13 @@ function IconContainer({
   title,
   icon,
   href,
+  target,
 }: {
   mouseX: MotionValue;
   title: string;
   icon: React.ReactNode;
   href: string;
+  target?: string;
 }) {
   let ref = useRef<HTMLDivElement>(null);
 
@@ -133,7 +136,7 @@ function IconContainer({
   let heightTransformIcon = useTransform(
     distance,
     [-150, 0, 150],
-    [20, 40, 20],
+    [20, 40, 20]
   );
 
   let width = useSpring(widthTransform, {
@@ -161,7 +164,11 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href}>
+    <a
+      href={href}
+      target={target || "_self"}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
+    >
       <motion.div
         ref={ref}
         style={{ width, height }}

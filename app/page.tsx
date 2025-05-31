@@ -6,6 +6,9 @@ import { HeroContent } from "@/components/hero-content";
 import { HeroGlobe } from "@/components/hero-globe";
 import { AboutMe } from "@/components/about-me";
 import { Experince } from "@/components/experience";
+import { ProjectsGrid } from '@/components/projects';
+import { ContactForm } from "@/components/contact-form";
+
 
 export default function Home() {
   return (
@@ -24,7 +27,7 @@ export default function Home() {
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
 
       {/* Hero section */}
-      <section className="relative z-20 flex items-center justify-center h-screen w-full">
+      <section id="home" className="relative z-20 flex items-center justify-center h-screen w-full">
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 px-4 max-w-7xl w-full">
           <div className="w-full md:w-[55%]">
             <HeroContent />
@@ -35,16 +38,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Me section */}
-      <section className="relative z-20 py-16 w-full max-w-7xl mx-auto">
+      <section id="about" className="relative z-20 py-16 w-full max-w-7xl mx-auto">
         <AboutMe />
       </section>
 
-      <section className="relative z-20 py-16 w-full max-w-7xl mx-auto">
+      <section id="experience" className="relative z-20 py-16 w-full max-w-7xl mx-auto">
         <Experince />
       </section>
 
-      {/* Fixed bottom navbar */}
+      <section id="projects" className="relative z-20 py-16 w-full max-w-7xl mx-auto">
+        <ProjectsGrid />
+      </section>
+
+      <section id="contact" className="relative z-20 py-16 w-full max-w-7xl mx-auto">
+        <ContactForm />
+      </section>
+
       <div className="fixed bottom-0 w-full z-50 flex justify-center pb-8">
         <Navbar />
       </div>
