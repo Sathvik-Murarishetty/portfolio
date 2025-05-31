@@ -12,19 +12,18 @@ import { ContactForm } from "@/components/contact-form";
 
 export default function Home() {
   return (
-    <div className="relative w-full bg-white dark:bg-black">
+    <div className="relative w-full bg-black">
       {/* Background grid */}
       <div
         className={cn(
           "absolute inset-0",
           "[background-size:40px_40px]",
-          "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-          "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
+          "[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
         )}
       />
 
       {/* Radial overlay */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black" />
 
       {/* Hero section */}
       <section id="home" className="relative z-20 flex items-center justify-center h-screen w-full">
