@@ -24,6 +24,11 @@ export function Experince() {
             title: "Jun 2024 Jul 2024",
             content: (
                 <div>
+                    <LinkPreview
+                        url="https://www.drdo.gov.in"
+                        isStatic={true}
+                        imageSrc="/images/drdo.png"
+                    >
                     <p className="mb-4 text-3xl font-semibold text-white">
                         Machine Learning Intern at DRDO
                     </p>
@@ -31,6 +36,7 @@ export function Experince() {
                         <p>Developed and integrated Large Language Models (LLMs) within ROS nodes to enhance robotic functionalities.</p>
                         <p>Implemented communication protocols for seamless interaction between LLMs and ROS nodes.</p>
                     </div>
+                    </LinkPreview>
                 </div>
             ),
         },
