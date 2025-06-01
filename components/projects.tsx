@@ -26,11 +26,11 @@ const projects: ProjectData[] = [
         imageUrl: "/images/archetype.png",
     },
     {
-        title: "Crypto Wallet Tracker",
-        description: "Track ETH wallets with real-time DeFi analytics and market insights.",
-        href: "https://github.com/Sathvik-Murarishetty/crypto-wallet-tracker",
-        techStack: "Streamlit, Moralis API",
-        imageUrl: "/images/wallet-tracker.png",
+        title: "SelectiveViT: Vision Transformer",
+        description: "Improving Vision Transformer interpretability via sparse attention mechanism.",
+        href: "https://github.com/Sathvik-Murarishetty/Selective-ViT",
+        techStack: "Python, Grad-CAM, Captum",
+        imageUrl: "/images/selective-vit.png",
     },
     {
         title: "Central Pharmacy Website",

@@ -4,27 +4,27 @@ This is my interactive portfolio website built using **Next.js 14**, **Tailwind 
 
 ---
 
-## 🌟 Features
+## Features
 
-- ✅ **Next.js 14 App Router (TypeScript)**
-- 🎨 **Tailwind CSS** for sleek, responsive styling
-- 🧠 **Framer Motion** animations and hover effects
-- 🌑 **Always-on Dark Mode**
-- 🧭 **Floating Dock Navigation Bar**
-- 📍 Scroll-based **Timeline of Experience**
-- 🖼️ Hover-based **Link Previews**
-- 📎 **Resume Download Button**
-- 📬 **Resend API-powered Contact Form**
+- **Next.js 14 App Router (TypeScript)**
+- **Tailwind CSS** for sleek, responsive styling
+- **Framer Motion** animations and hover effects
+- **Always-on Dark Mode**
+- **Floating Dock Navigation Bar**
+- Scroll-based **Timeline of Experience**
+- Hover-based **Link Previews**
+- **Resume Download Button**
+- **Resend API-powered Contact Form**
 
 ---
 
-## 🔗 Live Demo
+## Live Demo
 
 **🌐 [sathvikmurarishetty.vercel.app](https://portfolio-sathvik-murarishettys-projects.vercel.app/)**
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Tech           | Description                            |
 |----------------|----------------------------------------|
