@@ -8,8 +8,8 @@ export async function POST(req: Request) {
 
   try {
     const data = await resend.emails.send({
-      from: 'Sathvik&apos;s Portfolio',
-      to: 'murarishettysathvik@gmail.com', // your inbox
+      from: 'Sathvik\'s Portfolio <onboarding@resend.dev>', // temp dev domain
+      to: 'murarishettysathvik@gmail.com',
       subject: `New message from ${name}`,
       html: `<p><strong>Name:</strong> ${name}</p>
              <p><strong>Email:</strong> ${email}</p>
@@ -18,6 +18,7 @@ export async function POST(req: Request) {
 
     return new Response(JSON.stringify({ success: true, data }), { status: 200 });
   } catch (error) {
+    console.error(error);
     return new Response(JSON.stringify({ error }), { status: 500 });
   }
 }
